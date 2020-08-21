@@ -2,8 +2,12 @@
 
 body{
 font-family:Arial, Helvetica, sans-serif;
-font-size:1.4rem;
-line-height:1.5;
+font-size:1.3rem;
+line-height:1.2;
+}
+
+li{
+font-size:1.2rem;
 }
 
 .responsive-photo-90 {
@@ -12,5 +16,157 @@ width: 80%;
 margin-right: auto;
 margin-left: auto;
 max-width:760px;
-
 }
+
+/* media query 1 */
+
+@media (min-width: 960px) {
+
+h1 {
+font-size: 2.5rem;
+}
+
+article {
+width:950px;
+background-color:lavender;
+min-height:480px;
+padding:5px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* new */
+
+
+#navbar{
+list-style:none;
+margin-bottom:10px;
+float:left;
+width:940px;
+padding:5px;
+background-color:#283655;
+}
+
+#navbar li{
+font-size:1.2rem;
+float:left;
+margin-right:40px;
+margin-left:40px;
+position:relative;
+}
+
+#navbar a{
+display:block;
+padding:5px;
+color:white;
+background:#283655;
+text-decoration:none;
+}
+
+#navbar a:hover{
+color:#f7f7f7;
+text-decoration:none;
+}
+
+/*dropdown styling*/
+
+#navbar ul{
+list-style:none;
+position:absolute;
+left: -9999px; /*this hides offscreen when not hovered over*/
+}
+
+#navbar ul li{
+padding-top:5px; /*this forms spacing between list items*/
+float:none;
+margin-left:-25px;
+}
+
+#navbar ul a{
+white-space:nowrap; /*this stops text wrapping*/
+}
+
+#navbar li:hover ul{ /* this displays the dropdown on hover*/
+left:0; /*this brings back on screen when needed*/
+}
+
+#navbar li:hover a{ /* the top link displays when user hovers over a sub menu*/
+text-decoration:none;
+background-color:#4d648d;
+}
+
+#navbar li:hover ul a{ /*hover state defined a global style for links before they are hovered over. this undoes the effects.*/
+text-decoration:none;
+}
+
+#navbar li:hover ul li a:hover{ /*defines most explicit hover state when user hovers over a link*/
+background-color:#0b3d91;
+}
+}
+
+/* media query 2*/
+
+@media (max-width:959px) {
+
+h1 {
+font-size:1.5rem;
+color:black;
+}
+
+article {
+background-color:lavender;
+min-height:480px;
+padding:5px;
+}
+
+/* new*/
+
+a{
+font-size:1.5rem;
+text-decoration:none;
+}
+
+#navbar{
+list-style:none;
+margin-bottom:10px;
+}
+
+#navbar li{
+position:relative;
+margin-left:-40px;
+}
+
+#navbar a{
+font-size:1.25rem;
+display:block;
+width:66%;
+padding:10px;
+margin-bottom:5px;
+color:white;
+background:#283655;
+text-decoration:none;
+border-radius:1px 5px 5px 1px;
+}
+
+#navbar a:hover{
+color:#f7f7f7;
+text-decoration:none;
+}
+
+/*hide submenus in mobile devices*/
+
+#navbar ul li{
+display:none;
+}
+
+#navbar li:hover a{
+text-decoration:none;
+background-color:#4d648d;
+border-radius: 5px 25px 25px 5px;
+border-bottom:thin white solid;
+width:75%;
+}
+
+} /*end media query 2*/
+
+
