@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* in this css document we are defining some global styling using the body elements font and line height*/
+
+body{
+font-family:Verdana, Geneva, san-serif;
+line-height:1.5;
+}
+
+/* turn off underlining for links*/
+
+a{
+text-decoration:none;
+}
+
+/* indent paragraphs (so paragraph text doesn't bump into other elements) */
+
+p{
+margin-left:5px;
+}
+
+/* add some space around images*/
+
+img{
+margin:5px;
+}
+
+/* start defining the columns that will display in full sized browser windows*/
+
+article{
+width:960px;
+background-color:lavender;
+color:purple;
+min-height:600px;
+margin-right:auto;
+margin-left:auto;
+
+}
+
+section{
+padding:1%;
+margin:1%;
+min-height:500px;
+float:left;
+}
+
+#a img{
+float:left;
+}
+
+#a{
+width:20%;
+background-color:green;
+line-height:1;
+color:white;
+}
+
+#b{
+width:20%;
+background-color:white;
+color:darkgreen;
+}
+
+#c{
+width:20%;
+background-color:white;
+}
+
+#header{
+width:20%;
+background-color:white;
+color:purple;
+}
+
+@media (min-width:481px) and (max-width:959px) {
+
+article{
+position:relative;
+height:1000px; /* defined height of 1000px */
+width:95%;
+}
+
+section{
+min-height:320px; /*reducing minimum height*/
+}
+
+section img{
+float:left; /* floating the images in sections for a more compact table design*/
+padding:10px;
+}
+
+#header{
+float:left;
+width:44%;
+}
+
+
+#a{
+float:left; /* removing image float in column a*/
+width:44%;
+}
+
+#b{
+float:left;
+width:44%; /* we want width to be around half the width of section a to fit both columns b and c into same width as  column a*/
+background-color:rgb(233, 228, 70); /* changing background of column b to yellow for tablet*/
+
+}
+
+#c{
+float:left;
+width:44%;
+}
+
+
+}
+
+@media (max-width:480px) {
+
+article{
+width:100%;
+margin:0px;
+padding:0px;
+}
+
+section{
+min-height:300px;
+}
+
+section img{
+float:left;
+padding:10px;
+}
+
+#header{
+float:none;
+width:95%;
+}
+
+
+#a{
+float:none;
+width:95%;
+}
+
+#b{
+float:none;
+background-color:rgb(233, 228, 70);
+width:95%;
+}
+
+#c{
+float:none;
+width:95%;
+}
+
+}
