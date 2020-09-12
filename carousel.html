@@ -1,0 +1,114 @@
+
+<!-- this is simple example of bootstrap carousel-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Bootstrap 3 Carousel</title>
+<!-- these are library file of css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- this is library file of Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--this is library file of javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- this css used for body-->
+<style type="text/css">
+h2{
+margin: 0;
+color: orange;
+padding-top: 50px;
+font-size: 52px;
+font-family: "trebuchet ms", sans-serif;
+}
+.item{
+background: purple;
+text-align: center;
+margin: 20px;
+height: 300px !important;
+}
+.carousel{
+margin-top: 20px;
+}
+.bs-example{
+margin: 20px;
+}
+
+h1{
+margin:5px;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<!--this DIV use for carousel and sliding time-->
+<div class="bs-example">
+<div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+<!-- this DIV use for carousel indicators for slider-->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="3"></li>
+<li data-target="#myCarousel" data-slide-to="4"></li>
+</ol>
+<!--Wrapper for carousel items which are show in output form-->
+<div class="carousel-inner">
+<!--this is first slider page-->
+<div class="active item">
+<h2>I am the Walrus</h2>
+<div class="carousel-caption">
+<h3>I am he as you are he</h3>
+<p> as you are me and we are all together</p> <p>See how they run like pigs from a gun</p> <p>See how they fly, I'm crying</p> 
+</div>
+</div>
+<!-- this is second slider page-->
+<div class="item">
+<h2>Sitting On a Cornflake</h2>
+<div class="carousel-caption">
+<h3>Waiting for the van to come</h3>
+<p>Corporation T-shirt, stupid bloody Tuesday</p>
+    <p>Man you've been a naughty boy</p>
+    <p>You let your face grow long</p>
+</div>
+</div>
+<!-- this is third slider page-->
+<div class="item">
+<h2>Mister City Policeman Sitting</h2>
+<div class="carousel-caption">
+<h3>Pretty little policemen in a row</h3>
+<p>See how they fly like Lucy in the sky</p> <p>See how they run</p><p>I'm crying</p>
+</div>
+</div>
+<!-- this is fourth slider page-->
+<div class="item">
+<h2>I Am The Eggman</h2>
+<div class="carousel-caption">
+<h3>They are the eggmen</h3>
+<p>I am the Walrus</p><p>Goo goo g'joob</p>
+</div>
+</div>
+<!-- this is fifth slider page-->
+<div class="item">
+    <h2>Sitting In An English Garden </h2>
+    <div class="carousel-caption">
+    <h3>Waiting for the sun</h3>
+    <p>If the sun don't come, you get a tan</p> <p>From standing in the English rain</p>
+    </div>
+    </div>
+</div>
+<!-- this is carousel controls for used of next and previous pages slider-->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+<h1>The Beatles</h1>
+</body>
+</html>
